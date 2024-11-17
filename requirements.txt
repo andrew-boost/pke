@@ -1,6 +1,6 @@
 nltk
 networkx
-numpy
+numpy==1.26.4
 scipy
 scikit-learn
 unidecode

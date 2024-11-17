@@ -13,7 +13,7 @@ setup(name='pke',
       install_requires=[
           'nltk',
           'networkx',
-          'numpy',
+          'numpy==1.26.4',
           'scipy',
           'scikit-learn',
           'unidecode',
@@ -21,5 +21,7 @@ setup(name='pke',
           'joblib',
           'spacy>=3.2.3'
       ],
-      package_data={'pke': ['models/*.pickle', 'models/*.gz']}
+      package_data={'pke': ['models/*.pickle', 'models/*.gz']},
+      include_package_data=True,
+      python_requires='>=3.8'
       )
